@@ -1,9 +1,9 @@
 package FizzBuzzTesting;
 
 public class FizzBuzz {
-    public static void fizzBuzz(int num){
-        for (int i = 1; i<=num; i++){
-            System.out.print(i + " ");
-        }
+    public String fizzBuzzConvert(int convertingNumber){
+        if (convertingNumber % 3 == 0)
+            return "Fizz";
+        return String.valueOf(convertingNumber);
     }
 }

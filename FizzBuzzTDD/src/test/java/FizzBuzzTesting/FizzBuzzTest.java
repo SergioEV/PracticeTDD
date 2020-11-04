@@ -1,11 +1,20 @@
 package FizzBuzzTesting;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class FizzBuzzTest {
 
     @Test
-    public void shouldPrint1to100(){
-        FizzBuzz.fizzBuzz(100);
+    public void shouldLeaveNormalNumbersAsIs(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Assert.assertEquals("1", fizzBuzz.fizzBuzzConvert(1));
+        Assert.assertEquals("2", fizzBuzz.fizzBuzzConvert(2));
+    }
+    @Test
+    public void shouldPrintFizzOnEveryNumberDivisibleBy3(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Assert.assertEquals("Fizz",fizzBuzz.fizzBuzzConvert(3));
+
     }
 }
