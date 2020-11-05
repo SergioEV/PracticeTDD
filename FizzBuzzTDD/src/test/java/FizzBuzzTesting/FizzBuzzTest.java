@@ -22,6 +22,12 @@ public class FizzBuzzTest {
     public void shouldPrintBuzzOnEveryNumberDivisibleBy5(){
         FizzBuzz fizzBuzz = new FizzBuzz();
         Assert.assertEquals("Buzz",fizzBuzz.fizzBuzzConvert(5));
-
+        Assert.assertEquals("Buzz",fizzBuzz.fizzBuzzConvert(10));
     }
+    @Test
+    public void shouldPrintBuzzOnEveryNumberDivisibleBy3and5(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Assert.assertEquals("FizzBuzz",fizzBuzz.fizzBuzzConvert(15));
+    }
+
 }
