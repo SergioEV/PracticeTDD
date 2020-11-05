@@ -1,6 +1,10 @@
 package FizzBuzzTesting;
 
 public class FizzBuzz {
+    public static String fizzBuzzStringBuilder(int i) {
+        return null;
+    }
+
     public String fizzBuzzConvert(int convertingNumber){
         if (convertingNumber % 15 == 0)
             return "FizzBuzz";
@@ -10,4 +14,5 @@ public class FizzBuzz {
             return "Fizz";
         return String.valueOf(convertingNumber);
     }
+    
 }

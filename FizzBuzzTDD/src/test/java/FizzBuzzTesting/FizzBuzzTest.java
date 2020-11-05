@@ -31,4 +31,16 @@ public class FizzBuzzTest {
         Assert.assertEquals("FizzBuzz",fizzBuzz.fizzBuzzConvert(60));
     }
 
+    @Test
+    public void output100FizzBuzzesToConsole(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        for (int i = 1; i <= 100; i++)
+            System.out.print(fizzBuzz.fizzBuzzConvert(i) + " ");
+    }
+    @Test
+    public void checkConcatinationOfFizzBuzzToAString(){
+        String result = FizzBuzz.fizzBuzzStringBuilder(15);
+        Assert.assertEquals("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz", result);
+    }
+
 }
