@@ -28,6 +28,7 @@ public class FizzBuzzTest {
     public void shouldPrintBuzzOnEveryNumberDivisibleBy3and5(){
         FizzBuzz fizzBuzz = new FizzBuzz();
         Assert.assertEquals("FizzBuzz",fizzBuzz.fizzBuzzConvert(15));
+        Assert.assertEquals("FizzBuzz",fizzBuzz.fizzBuzzConvert(60));
     }
 
 }
