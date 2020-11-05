@@ -1,11 +1,14 @@
 package FizzBuzzTesting;
 
 public class FizzBuzz {
-    public static String fizzBuzzStringBuilder(int i) {
-        return null;
+    public static String fizzBuzzStringBuilder(int numberOfFizzBuzzes) {
+        StringBuilder resultConcatenation = new StringBuilder();
+        for (int i = 1; i <= numberOfFizzBuzzes; i++)
+            resultConcatenation.append(fizzBuzzConvert(i) + " ");
+        return resultConcatenation.toString();
     }
 
-    public String fizzBuzzConvert(int convertingNumber){
+    public static String fizzBuzzConvert(int convertingNumber){
         if (convertingNumber % 15 == 0)
             return "FizzBuzz";
         if (convertingNumber % 5 == 0)
