@@ -4,12 +4,20 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FizzBuzzTest {
-
+    private static Integer input = 0;
+    private static Integer secondTestInput = 0;
     @Test
     public void shouldLeaveNormalNumbersAsIs(){
+        //given
         FizzBuzz fizzBuzz = new FizzBuzz();
-        Assert.assertEquals("1", fizzBuzz.fizzBuzzConvert(1));
-        Assert.assertEquals("2", fizzBuzz.fizzBuzzConvert(2));
+        //when
+        input = 1;
+        //then
+        Assert.assertEquals("1", fizzBuzz.fizzBuzzConvert(input));
+        //when
+        secondTestInput = 2;
+        //then
+        Assert.assertEquals("2", fizzBuzz.fizzBuzzConvert(secondTestInput));
     }
     @Test
     public void shouldPrintFizzOnEveryNumberDivisibleBy3(){
